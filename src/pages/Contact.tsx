@@ -10,9 +10,9 @@ const Contact = () => {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
         >
-          <h1 className="text-4xl font-bold text-white mb-6">Get in Touch</h1>
+          <h1 className="text-4xl font-bold text-white mb-6">Ponte en Contacto</h1>
           <p className="text-gray-400 text-lg mb-12 leading-relaxed">
-            Have a question, suggestion, or just want to say hello? We'd love to hear from you. Fill out the form or reach us directly.
+            ¿Tienes una pregunta, sugerencia o simplemente quieres saludar? Nos encantaría escucharte. Completa el formulario o contáctanos directamente.
           </p>
 
           <div className="space-y-8">
@@ -21,9 +21,9 @@ const Contact = () => {
                 <Mail className="w-6 h-6 text-purple-500" />
               </div>
               <div>
-                <h3 className="text-white font-semibold text-lg mb-1">Email Us</h3>
-                <p className="text-gray-400">hello@podcastpro.com</p>
-                <p className="text-gray-400">press@podcastpro.com</p>
+                <h3 className="text-white font-semibold text-lg mb-1">Envíanos un Email</h3>
+                <p className="text-gray-400">hola@afondoculturepop.com</p>
+                <p className="text-gray-400">prensa@afondoculturepop.com</p>
               </div>
             </div>
 
@@ -32,9 +32,9 @@ const Contact = () => {
                 <MapPin className="w-6 h-6 text-purple-500" />
               </div>
               <div>
-                <h3 className="text-white font-semibold text-lg mb-1">Visit Us</h3>
-                <p className="text-gray-400">123 Audio Avenue</p>
-                <p className="text-gray-400">Sound City, SC 90210</p>
+                <h3 className="text-white font-semibold text-lg mb-1">Visítanos</h3>
+                <p className="text-gray-400">Avenida Cultura 123</p>
+                <p className="text-gray-400">Ciudad de México, CDMX 01000</p>
               </div>
             </div>
 
@@ -43,9 +43,9 @@ const Contact = () => {
                 <Phone className="w-6 h-6 text-purple-500" />
               </div>
               <div>
-                <h3 className="text-white font-semibold text-lg mb-1">Call Us</h3>
-                <p className="text-gray-400">+1 (555) 123-4567</p>
-                <p className="text-gray-400">Mon-Fri, 9am-6pm EST</p>
+                <h3 className="text-white font-semibold text-lg mb-1">Llámanos</h3>
+                <p className="text-gray-400">+52 (55) 1234-5678</p>
+                <p className="text-gray-400">Lun-Vie, 9am-6pm CST</p>
               </div>
             </div>
           </div>
@@ -61,60 +61,60 @@ const Contact = () => {
           <form className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
-                <label htmlFor="firstName" className="text-sm font-medium text-gray-300">First Name</label>
+                <label htmlFor="firstName" className="text-sm font-medium text-gray-300">Nombre</label>
                 <input 
                   type="text" 
                   id="firstName"
                   className="w-full px-4 py-3 rounded-xl bg-black/50 border border-white/10 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
-                  placeholder="John"
+                  placeholder="Juan"
                 />
               </div>
               <div className="space-y-2">
-                <label htmlFor="lastName" className="text-sm font-medium text-gray-300">Last Name</label>
+                <label htmlFor="lastName" className="text-sm font-medium text-gray-300">Apellido</label>
                 <input 
                   type="text" 
                   id="lastName"
                   className="w-full px-4 py-3 rounded-xl bg-black/50 border border-white/10 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
-                  placeholder="Doe"
+                  placeholder="Pérez"
                 />
               </div>
             </div>
 
             <div className="space-y-2">
-              <label htmlFor="email" className="text-sm font-medium text-gray-300">Email</label>
+              <label htmlFor="email" className="text-sm font-medium text-gray-300">Correo Electrónico</label>
               <input 
                 type="email" 
                 id="email"
                 className="w-full px-4 py-3 rounded-xl bg-black/50 border border-white/10 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
-                placeholder="john@example.com"
+                placeholder="juan@ejemplo.com"
               />
             </div>
 
             <div className="space-y-2">
-              <label htmlFor="subject" className="text-sm font-medium text-gray-300">Subject</label>
+              <label htmlFor="subject" className="text-sm font-medium text-gray-300">Asunto</label>
               <select 
                 id="subject"
                 className="w-full px-4 py-3 rounded-xl bg-black/50 border border-white/10 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
               >
-                <option>General Inquiry</option>
-                <option>Sponsorship</option>
-                <option>Guest Proposal</option>
-                <option>Feedback</option>
+                <option>Consulta General</option>
+                <option>Patrocinio</option>
+                <option>Propuesta de Invitado</option>
+                <option>Comentarios</option>
               </select>
             </div>
 
             <div className="space-y-2">
-              <label htmlFor="message" className="text-sm font-medium text-gray-300">Message</label>
+              <label htmlFor="message" className="text-sm font-medium text-gray-300">Mensaje</label>
               <textarea 
                 id="message"
                 rows={4}
                 className="w-full px-4 py-3 rounded-xl bg-black/50 border border-white/10 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors resize-none"
-                placeholder="How can we help you?"
+                placeholder="¿Cómo podemos ayudarte?"
               />
             </div>
 
             <button className="w-full py-4 bg-purple-600 text-white font-bold rounded-xl hover:bg-purple-700 transition-colors shadow-lg shadow-purple-600/20 flex items-center justify-center gap-2">
-              Send Message
+              Enviar Mensaje
               <Send className="w-4 h-4" />
             </button>
           </form>

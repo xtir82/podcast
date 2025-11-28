@@ -4,27 +4,27 @@ import { motion } from 'framer-motion';
 const episodes = [
   {
     id: 1,
-    title: "The Future of AI in Creative Arts",
-    date: "Mar 15, 2024",
+    title: "El Impacto de Marvel en la Cultura Popular",
+    date: "15 Mar, 2024",
     duration: "45 min",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800",
-    description: "Exploring how artificial intelligence is reshaping the landscape of digital art and music composition."
+    description: "Exploramos cómo el Universo Cinematográfico de Marvel ha transformado la industria del entretenimiento y la cultura pop moderna."
   },
   {
     id: 2,
-    title: "Sustainable Living in 2024",
-    date: "Mar 08, 2024",
+    title: "La Evolución de la Música K-Pop",
+    date: "08 Mar, 2024",
     duration: "38 min",
     image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=800",
-    description: "Practical tips for reducing your carbon footprint without sacrificing modern comforts."
+    description: "Un análisis profundo del fenómeno global del K-Pop y su influencia en la música contemporánea."
   },
   {
     id: 3,
-    title: "Mental Health in the Digital Age",
-    date: "Mar 01, 2024",
+    title: "Nostalgia en las Series de Streaming",
+    date: "01 Mar, 2024",
     duration: "52 min",
     image: "https://images.unsplash.com/photo-1527137342181-19aab11a8ee8?auto=format&fit=crop&q=80&w=800",
-    description: "A deep dive into the psychological effects of social media and constant connectivity."
+    description: "¿Por qué las plataformas de streaming apuestan tanto por la nostalgia? Analizamos Stranger Things, Wednesday y más."
   }
 ];
 
@@ -49,21 +49,21 @@ const Home = () => {
             transition={{ duration: 0.8 }}
           >
             <span className="inline-block py-1 px-3 rounded-full bg-purple-500/20 text-purple-400 text-sm font-medium mb-6 border border-purple-500/30">
-              New Episode Every Friday
+              Nuevo Episodio Cada Viernes
             </span>
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
-              Stories That <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Resonate</span>
+              Cultura Pop <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">A Fondo</span>
             </h1>
             <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-              Join us as we explore the untold stories of innovators, creators, and dreamers shaping our world.
+              Únete a nosotros mientras exploramos lo mejor del cine, series, música y todo lo que hace vibrar a la cultura popular.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-gray-200 transition-all transform hover:scale-105 flex items-center justify-center gap-2">
                 <Play className="w-5 h-5 fill-current" />
-                Listen Now
+                Escuchar Ahora
               </button>
               <button className="px-8 py-4 bg-white/10 text-white font-bold rounded-full hover:bg-white/20 transition-all backdrop-blur-sm border border-white/10">
-                View Episodes
+                Ver Episodios
               </button>
             </div>
           </motion.div>
@@ -73,9 +73,9 @@ const Home = () => {
       {/* Latest Episodes */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between mb-12">
-          <h2 className="text-3xl font-bold text-white">Latest Episodes</h2>
+          <h2 className="text-3xl font-bold text-white">Últimos Episodios</h2>
           <a href="#" className="text-purple-400 hover:text-purple-300 font-medium flex items-center gap-1">
-            View All <span className="text-xl">→</span>
+            Ver Todos <span className="text-xl">→</span>
           </a>
         </div>
         
@@ -124,7 +124,7 @@ const Home = () => {
                 
                 <div className="flex items-center gap-2 text-sm font-medium text-white group-hover:text-purple-400 transition-colors">
                   <Headphones className="w-4 h-4" />
-                  Listen Episode
+                  Escuchar Episodio
                 </div>
               </div>
             </motion.div>
@@ -137,16 +137,16 @@ const Home = () => {
         <div className="bg-gradient-to-r from-purple-900/20 to-pink-900/20 rounded-3xl p-8 md:p-16 text-center border border-white/10 relative overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
           <div className="relative z-10 max-w-2xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Never Miss an Episode</h2>
-            <p className="text-gray-300 mb-8">Subscribe to our newsletter to get the latest episodes, show notes, and exclusive content delivered straight to your inbox.</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">No Te Pierdas Ningún Episodio</h2>
+            <p className="text-gray-300 mb-8">Suscríbete a nuestro boletín para recibir los últimos episodios, notas del programa y contenido exclusivo directamente en tu bandeja de entrada.</p>
             <form className="flex flex-col sm:flex-row gap-4">
               <input 
                 type="email" 
-                placeholder="Enter your email" 
+                placeholder="Ingresa tu correo electrónico" 
                 className="flex-grow px-6 py-4 rounded-full bg-black/50 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500"
               />
               <button className="px-8 py-4 bg-purple-600 text-white font-bold rounded-full hover:bg-purple-700 transition-colors shadow-lg shadow-purple-600/20">
-                Subscribe
+                Suscribirse
               </button>
             </form>
           </div>

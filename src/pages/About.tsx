@@ -3,22 +3,22 @@ import { Mic, Users, Globe } from 'lucide-react';
 
 const team = [
   {
-    name: "Sarah Jenkins",
-    role: "Host & Producer",
+    name: "María González",
+    role: "Presentadora y Productora",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400",
-    bio: "Journalist turned podcaster with a passion for uncovering hidden stories."
+    bio: "Apasionada de la cultura pop con más de 10 años cubriendo cine, series y música."
   },
   {
-    name: "David Chen",
-    role: "Audio Engineer",
+    name: "Carlos Ramírez",
+    role: "Ingeniero de Audio",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
-    bio: "Sound wizard ensuring every episode sounds crisp and immersive."
+    bio: "Experto en sonido que asegura que cada episodio suene increíble y profesional."
   },
   {
-    name: "Elena Rodriguez",
-    role: "Content Strategist",
+    name: "Ana Martínez",
+    role: "Estratega de Contenido",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400",
-    bio: "The creative mind behind our episode themes and guest curation."
+    bio: "La mente creativa detrás de nuestros temas y la selección de invitados especiales."
   }
 ];
 
@@ -33,7 +33,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-6xl font-bold text-white mb-6"
           >
-            We Are <span className="text-purple-500">PodcastPro</span>
+            Somos <span className="text-purple-500">A Fondo Cultura Pop</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -41,7 +41,7 @@ const About = () => {
             transition={{ delay: 0.1 }}
             className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed"
           >
-            Dedicated to bringing you the most compelling conversations from around the globe. We believe in the power of voice to inspire, educate, and connect.
+            Dedicados a traerte las conversaciones más fascinantes sobre cine, series, música y todo lo que hace vibrar a la cultura popular. Creemos en el poder de la voz para inspirar, educar y conectar.
           </motion.p>
         </div>
       </section>
@@ -53,17 +53,17 @@ const About = () => {
             <div className="p-6">
               <Mic className="w-10 h-10 text-purple-500 mx-auto mb-4" />
               <div className="text-4xl font-bold text-white mb-2">150+</div>
-              <div className="text-gray-400">Episodes Produced</div>
+              <div className="text-gray-400">Episodios Producidos</div>
             </div>
             <div className="p-6">
               <Users className="w-10 h-10 text-purple-500 mx-auto mb-4" />
               <div className="text-4xl font-bold text-white mb-2">50k+</div>
-              <div className="text-gray-400">Monthly Listeners</div>
+              <div className="text-gray-400">Oyentes Mensuales</div>
             </div>
             <div className="p-6">
               <Globe className="w-10 h-10 text-purple-500 mx-auto mb-4" />
               <div className="text-4xl font-bold text-white mb-2">80+</div>
-              <div className="text-gray-400">Countries Reached</div>
+              <div className="text-gray-400">Países Alcanzados</div>
             </div>
           </div>
         </div>
@@ -71,7 +71,7 @@ const About = () => {
 
       {/* Team */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-white mb-12 text-center">Meet the Team</h2>
+        <h2 className="text-3xl font-bold text-white mb-12 text-center">Conoce al Equipo</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {team.map((member, index) => (
             <motion.div

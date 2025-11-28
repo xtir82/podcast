@@ -8,10 +8,10 @@ const Navbar = () => {
   const location = useLocation();
 
   const links = [
-    { name: 'Home', path: '/' },
+    { name: 'Inicio', path: '/' },
     { name: 'Blog', path: '/blog' },
-    { name: 'About', path: '/about' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'Quiénes Somos', path: '/about' },
+    { name: 'Contacto', path: '/contact' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center gap-2 text-white font-bold text-xl tracking-tighter">
             <Mic className="w-6 h-6 text-purple-500" />
-            <span>PODCAST<span className="text-purple-500">PRO</span></span>
+            <span>A FONDO <span className="text-purple-500">CULTURA POP</span></span>
           </Link>
 
           {/* Desktop Menu */}

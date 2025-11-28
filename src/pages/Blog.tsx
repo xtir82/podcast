@@ -4,50 +4,50 @@ import { ArrowRight } from 'lucide-react';
 const posts = [
   {
     id: 1,
-    title: "Why Podcasting is the Future of Storytelling",
-    excerpt: "In an age of short-form content, long-form audio is making a massive comeback. Here's why.",
-    date: "Mar 20, 2024",
-    category: "Industry",
+    title: "El Auge de los Universos Cinematográficos",
+    excerpt: "Cómo Marvel y DC han transformado la forma en que consumimos historias en el cine moderno.",
+    date: "20 Mar, 2024",
+    category: "Cine",
     image: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&q=80&w=800"
   },
   {
     id: 2,
-    title: "Top 10 Microphones for Beginners",
-    excerpt: "You don't need to break the bank to sound professional. Check out our top picks for 2024.",
-    date: "Mar 18, 2024",
-    category: "Gear",
+    title: "Las 10 Series Más Esperadas de 2024",
+    excerpt: "Desde dramas épicos hasta comedias refrescantes, estas son las series que no te puedes perder este año.",
+    date: "18 Mar, 2024",
+    category: "Series",
     image: "https://images.unsplash.com/photo-1524678606372-987d780461d4?auto=format&fit=crop&q=80&w=800"
   },
   {
     id: 3,
-    title: "Interviewing 101: How to Ask Better Questions",
-    excerpt: "The secret to a great interview isn't the guest, it's the questions you ask.",
-    date: "Mar 15, 2024",
-    category: "Tips",
+    title: "El Renacimiento del Vinilo en la Era Digital",
+    excerpt: "Por qué los millennials y Gen Z están redescubriendo el placer de escuchar música en formato físico.",
+    date: "15 Mar, 2024",
+    category: "Música",
     image: "https://images.unsplash.com/photo-1554446422-d05db23719d2?auto=format&fit=crop&q=80&w=800"
   },
   {
     id: 4,
-    title: "Building a Community Around Your Podcast",
-    excerpt: "Engagement goes beyond downloads. Learn how to foster a loyal community.",
-    date: "Mar 10, 2024",
-    category: "Growth",
+    title: "Anime: De Nicho a Mainstream",
+    excerpt: "Cómo el anime japonés conquistó el mundo y se convirtió en fenómeno global.",
+    date: "10 Mar, 2024",
+    category: "Anime",
     image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800"
   },
   {
     id: 5,
-    title: "The Art of Sound Design",
-    excerpt: "How subtle sound effects and music can elevate your storytelling to the next level.",
-    date: "Mar 05, 2024",
-    category: "Production",
+    title: "Los Videojuegos Como Arte Narrativo",
+    excerpt: "Exploramos cómo los videojuegos modernos rivalizan con el cine en términos de narrativa y emoción.",
+    date: "05 Mar, 2024",
+    category: "Gaming",
     image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&q=80&w=800"
   },
   {
     id: 6,
-    title: "Monetization Strategies for 2024",
-    excerpt: "From sponsorships to premium content, explore the best ways to monetize your show.",
-    date: "Feb 28, 2024",
-    category: "Business",
+    title: "Festivales de Música 2024: Guía Completa",
+    excerpt: "Los mejores festivales de música alrededor del mundo que no te puedes perder este año.",
+    date: "28 Feb, 2024",
+    category: "Música",
     image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&q=80&w=800"
   }
 ];
@@ -60,9 +60,9 @@ const Blog = () => {
         animate={{ opacity: 1, y: 0 }}
         className="text-center mb-16"
       >
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Our Blog</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Nuestro Blog</h1>
         <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-          Insights, tips, and stories from the world of audio production and storytelling.
+          Perspectivas, análisis y historias del mundo de la cultura popular y el entretenimiento.
         </p>
       </motion.div>
 
@@ -98,7 +98,7 @@ const Blog = () => {
                 {post.excerpt}
               </p>
               <a href="#" className="inline-flex items-center text-white font-medium hover:text-purple-400 transition-colors">
-                Read Article <ArrowRight className="w-4 h-4 ml-2" />
+                Leer Artículo <ArrowRight className="w-4 h-4 ml-2" />
               </a>
             </div>
           </motion.article>
